@@ -2,7 +2,7 @@
 
 HackSHSID 2026 · Track 2 (Huawei / Hithium)
 
-This is the submission copy of `step6 fix567 improved`. It schedules flexible training/batch
+GridPilot schedules flexible training/batch
 jobs and battery use under changing inference demand, electricity prices,
 carbon intensity and renewable supply. The goal is lower cost and emissions
 within a clearly stated service and physical operating envelope.
