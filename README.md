@@ -1,5 +1,5 @@
 # AI Data Center Power–Computing Co-Scheduling
-
+[Open the GridPilot web demo](https://gridpilot-simulator.paleseed13.chatgpt.site/)
 HackSHSID 2026 · Track 2 (Huawei / Hithium)
 
 GridPilot schedules flexible training/batch
