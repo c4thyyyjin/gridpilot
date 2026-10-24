@@ -1,0 +1,8 @@
+profile,policy,seed,oracle_feasible
+typical,guarded_combined,208,False
+typical,guarded_combined,214,False
+low_green,guarded_combined,208,False
+low_green,guarded_combined,214,False
+high_inference,guarded_combined,202,False
+high_inference,guarded_combined,208,False
+high_inference,guarded_combined,214,False

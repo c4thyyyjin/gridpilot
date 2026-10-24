@@ -1,0 +1,231 @@
+{
+  "config_snapshot": {
+    "HORIZON_H": 72,
+    "DT_H": 1.0,
+    "SEED": 42,
+    "PRICE_LEVELS": {
+      "critical": 1.297,
+      "peak": 1.1,
+      "flat": 0.687,
+      "valley": 0.372
+    },
+    "TOU_HOURS": {
+      "0": "valley",
+      "1": "valley",
+      "2": "valley",
+      "3": "valley",
+      "4": "valley",
+      "5": "valley",
+      "6": "valley",
+      "12": "valley",
+      "13": "valley",
+      "17": "peak",
+      "18": "peak",
+      "21": "peak",
+      "19": "critical",
+      "20": "critical"
+    },
+    "GRID_CO2_MEAN": 0.537,
+    "GRID_CO2_SWING": 0.2,
+    "SOLAR_PEAK_MW": 12.0,
+    "WIND_MEAN_MW": 3.0,
+    "GREEN_PRICE": 0.3,
+    "GREEN_CO2": 0.0,
+    "ALLOW_EXPORT": false,
+    "BATT_ENERGY_MWH": 20.0,
+    "BATT_POWER_MW": 10.0,
+    "BATT_EFF_CHARGE": 0.95,
+    "BATT_EFF_DISCHARGE": 0.95,
+    "BATT_SOC_MIN": 0.1,
+    "BATT_SOC_MAX": 0.95,
+    "BATT_SOC_START": 0.5,
+    "BATT_DEGRADATION": 0.05,
+    "IT_CAPACITY_MW": 20.0,
+    "PUE": 1.2,
+    "SHARE_INFERENCE": 0.35,
+    "SHARE_TRAINING": 0.45,
+    "SHARE_BATCH": 0.2,
+    "AVG_IT_UTILISATION": 0.7,
+    "N_TRAINING_JOBS": 6,
+    "N_BATCH_JOBS": 12,
+    "BATCH_MAX_DEADLINE_H": 24,
+    "FORECAST_ERROR_LEVELS": [
+      0.0,
+      0.1,
+      0.2,
+      0.3
+    ],
+    "LAMBDA_SWEEP": [
+      0,
+      100,
+      500,
+      1000,
+      2000,
+      5000,
+      10000,
+      20000
+    ],
+    "LAMBDA_DEFAULT": 100,
+    "INFERENCE_NIGHT_FACTOR": 0.55,
+    "INFERENCE_EVENING_FACTOR": 1.35,
+    "TRAIN_WINDOW_H": [
+      30,
+      60
+    ],
+    "BATCH_WINDOW_H": [
+      6,
+      24
+    ],
+    "JOB_SLACK": [
+      0.35,
+      0.6
+    ],
+    "GRID_IMPORT_LIMIT_MW": 26.0,
+    "PEN_UNMET_CNY_PER_MWH": 100000.0,
+    "PEN_GRID_OVERFLOW_CNY_PER_MWH": 100000.0,
+    "GRID_IMPORT_LIMIT_SWEEP_MW": [
+      10.0,
+      16.0,
+      20.0,
+      24.0,
+      26.0,
+      28.0,
+      null
+    ],
+    "BATT_INSTALLED_COST_SWEEP_CNY_PER_KWH": [
+      500.0,
+      1000.0,
+      1500.0
+    ],
+    "BATT_INSTALLED_POWER_COST_CNY_PER_KW": 0.0,
+    "BATT_ECONOMIC_LIFE_YEARS": 10,
+    "ECON_DISCOUNT_RATE": 0.08,
+    "BATT_FIXED_OM_FRACTION_PER_YEAR": 0.015,
+    "DEMAND_CHARGE_SWEEP_CNY_PER_KW_MONTH": [
+      0.0,
+      20.0,
+      40.0
+    ],
+    "ECON_HOURS_PER_YEAR": 8760.0,
+    "PEN_RAMP_CNY_PER_MWH": 100000.0
+  },
+  "seeds": [
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219
+  ],
+  "profiles": {
+    "typical": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "low_green": [
+      0.5,
+      0.75,
+      1.0
+    ],
+    "high_inference": [
+      0.8,
+      1.0,
+      1.35
+    ]
+  },
+  "policies": {
+    "original": {
+      "observation_delay_h": 0,
+      "advance_job_knowledge": true,
+      "checkpoint_overhead_fraction": 0.0,
+      "ramp_mw_per_hour": null,
+      "service_guard": false,
+      "fast_safety": false
+    },
+    "online": {
+      "observation_delay_h": 0,
+      "advance_job_knowledge": false,
+      "checkpoint_overhead_fraction": 0.0,
+      "ramp_mw_per_hour": null,
+      "service_guard": false,
+      "fast_safety": false
+    },
+    "delayed_online": {
+      "observation_delay_h": 1,
+      "advance_job_knowledge": false,
+      "checkpoint_overhead_fraction": 0.0,
+      "ramp_mw_per_hour": null,
+      "service_guard": false,
+      "fast_safety": false
+    },
+    "ramp_online": {
+      "observation_delay_h": 0,
+      "advance_job_knowledge": false,
+      "checkpoint_overhead_fraction": 0.0,
+      "ramp_mw_per_hour": 2.0,
+      "service_guard": false,
+      "fast_safety": false
+    },
+    "overhead_online": {
+      "observation_delay_h": 0,
+      "advance_job_knowledge": false,
+      "checkpoint_overhead_fraction": 0.05,
+      "ramp_mw_per_hour": null,
+      "service_guard": false,
+      "fast_safety": false
+    },
+    "combined": {
+      "observation_delay_h": 1,
+      "advance_job_knowledge": false,
+      "checkpoint_overhead_fraction": 0.05,
+      "ramp_mw_per_hour": 2.0,
+      "service_guard": false,
+      "fast_safety": false
+    },
+    "guarded_online": {
+      "observation_delay_h": 0,
+      "advance_job_knowledge": false,
+      "checkpoint_overhead_fraction": 0.0,
+      "ramp_mw_per_hour": null,
+      "service_guard": true,
+      "fast_safety": true
+    },
+    "guarded_delayed": {
+      "observation_delay_h": 1,
+      "advance_job_knowledge": false,
+      "checkpoint_overhead_fraction": 0.0,
+      "ramp_mw_per_hour": null,
+      "service_guard": true,
+      "fast_safety": true
+    },
+    "guarded_combined": {
+      "observation_delay_h": 1,
+      "advance_job_knowledge": false,
+      "checkpoint_overhead_fraction": 0.05,
+      "ramp_mw_per_hour": 2.0,
+      "service_guard": true,
+      "fast_safety": true
+    }
+  },
+  "forecast_error": 0.3,
+  "generator_feasibility_screen": false,
+  "horizon_hours": 72.0,
+  "lambda_cny_per_tonne": 100,
+  "grid_limit_mw": 26.0,
+  "selection": "unscreened synthetic draws; seeds 100\u2013119 and 200\u2013219 informed development; seeds 220\u2013239 are designated fresh validation; the seeds field identifies this run"
+}

@@ -1,0 +1,172 @@
+batch,method,metric,n_pairs,n_feasible_pairs,eligible,confidence,status,ci_status,percentage_status,saving_mean,saving_ci_low,saving_ci_high,gain_pct_mean,gain_pct_ci_low,gain_pct_ci_high,section
+0,baseline-fc,objective,5,0,False,0.95,infeasible_runs,ineligible,defined,,,,,,,1. Headline (forecast error 0.3)
+0,baseline-fc,cost_cny,5,0,False,0.95,infeasible_runs,ineligible,defined,,,,,,,1. Headline (forecast error 0.3)
+0,baseline-fc,co2_t,5,0,False,0.95,infeasible_runs,ineligible,defined,,,,,,,1. Headline (forecast error 0.3)
+0,open-loop,objective,5,0,False,0.95,infeasible_runs,ineligible,defined,,,,,,,1. Headline (forecast error 0.3)
+0,open-loop,cost_cny,5,0,False,0.95,infeasible_runs,ineligible,defined,,,,,,,1. Headline (forecast error 0.3)
+0,open-loop,co2_t,5,0,False,0.95,infeasible_runs,ineligible,defined,,,,,,,1. Headline (forecast error 0.3)
+0,MPC,objective,5,5,True,0.95,feasible,available,defined,148359.18882196216,127147.36241898677,169571.01522493755,20.523820301360633,18.020061675186245,23.02757892753502,1. Headline (forecast error 0.3)
+0,MPC,cost_cny,5,5,True,0.95,feasible,available,defined,145196.31103807344,124090.9017276009,166301.720348546,21.384225147775965,18.78953384038225,23.978916455169678,1. Headline (forecast error 0.3)
+0,MPC,co2_t,5,5,True,0.95,feasible,available,defined,31.628777838887288,26.214071085740827,37.04348459203375,7.223523283860746,5.792299549960235,8.654747017761256,1. Headline (forecast error 0.3)
+0,oracle,objective,5,5,True,0.95,feasible,available,defined,150853.83400852693,130203.09951444724,171504.56850260662,20.87147472422958,18.438082854782422,23.304866593676735,1. Headline (forecast error 0.3)
+0,oracle,cost_cny,5,5,True,0.95,feasible,available,defined,147700.90645292276,127051.40270383473,168350.4102020108,21.755706235742608,19.224076428875843,24.287336042609372,1. Headline (forecast error 0.3)
+0,oracle,co2_t,5,5,True,0.95,feasible,available,defined,31.529275556041977,25.93299034820528,37.125560763878674,7.201011329569819,5.758000890970702,8.644021768168937,1. Headline (forecast error 0.3)
+5,MPC,objective,5,5,True,0.95,feasible,available,defined,145610.55408176983,124145.53008090606,167075.5780826336,21.443279335051713,18.817557450619077,24.06900121948435,"2. Cost vs CO2 (lambda sweep, MPC)"
+5,MPC,cost_cny,5,5,True,0.95,feasible,available,defined,145610.55408176983,124145.53008090606,167075.5780826336,21.443279335051713,18.817557450619077,24.06900121948435,"2. Cost vs CO2 (lambda sweep, MPC)"
+5,MPC,co2_t,5,5,True,0.95,feasible,available,defined,21.942952820080073,16.276733343479343,27.609172296680804,5.041992724858622,3.433380244997773,6.65060520471947,"2. Cost vs CO2 (lambda sweep, MPC)"
+7,MPC,objective,5,5,True,0.95,feasible,available,defined,148359.18882196216,127147.36241898677,169571.01522493755,20.523820301360633,18.020061675186245,23.02757892753502,"2. Cost vs CO2 (lambda sweep, MPC)"
+7,MPC,cost_cny,5,5,True,0.95,feasible,available,defined,145196.31103807344,124090.9017276009,166301.720348546,21.384225147775965,18.78953384038225,23.978916455169678,"2. Cost vs CO2 (lambda sweep, MPC)"
+7,MPC,co2_t,5,5,True,0.95,feasible,available,defined,31.628777838887288,26.214071085740827,37.04348459203375,7.223523283860746,5.792299549960235,8.654747017761256,"2. Cost vs CO2 (lambda sweep, MPC)"
+9,MPC,objective,5,5,True,0.95,feasible,available,defined,161010.09556209555,139243.1688491652,182777.0222750259,17.92402573984606,15.69707169711632,20.150979782575796,"2. Cost vs CO2 (lambda sweep, MPC)"
+9,MPC,cost_cny,5,5,True,0.95,feasible,available,defined,145196.3110380734,124090.90172760087,166301.72034854596,21.384225147775958,18.789533840382244,23.97891645516967,"2. Cost vs CO2 (lambda sweep, MPC)"
+9,MPC,co2_t,5,5,True,0.95,feasible,available,defined,31.627569048044233,26.211851342322916,37.04328675376555,7.223229736520151,5.791961193655306,8.654498279384997,"2. Cost vs CO2 (lambda sweep, MPC)"
+11,MPC,objective,5,5,True,0.95,feasible,available,defined,176906.47693824698,154355.455906814,199457.49796967997,15.831061165873612,13.840476926901383,17.821645404845842,"2. Cost vs CO2 (lambda sweep, MPC)"
+11,MPC,cost_cny,5,5,True,0.95,feasible,available,defined,145054.9299595641,123586.16156816615,166523.69835096202,21.362584347656405,18.712261614949462,24.012907080363348,"2. Cost vs CO2 (lambda sweep, MPC)"
+11,MPC,co2_t,5,5,True,0.95,feasible,available,defined,31.851546978682926,26.53473445471704,37.16835950264881,7.273657004893548,5.8681903057453315,8.679123704041764,"2. Cost vs CO2 (lambda sweep, MPC)"
+13,MPC,objective,5,5,True,0.95,feasible,available,defined,210502.83096743637,186141.73276619543,234863.9291686773,13.530726691087002,11.83817669391675,15.223276688257254,"2. Cost vs CO2 (lambda sweep, MPC)"
+13,MPC,cost_cny,5,5,True,0.95,feasible,available,defined,138732.04642002462,119157.70128447065,158306.3915555786,20.43343408690495,18.046554963428857,22.82031321038104,"2. Cost vs CO2 (lambda sweep, MPC)"
+13,MPC,co2_t,5,5,True,0.95,feasible,available,defined,35.88539227370585,31.009299894717692,40.761484652694,8.192065454332806,6.823907414154881,9.56022349451073,"2. Cost vs CO2 (lambda sweep, MPC)"
+15,MPC,objective,5,5,True,0.95,feasible,available,defined,331258.79492177244,285909.61097847036,376607.9788650745,11.546185633291163,9.693200588025386,13.39917067855694,"2. Cost vs CO2 (lambda sweep, MPC)"
+15,MPC,cost_cny,5,5,True,0.95,feasible,available,defined,116988.98951887627,98894.20574557275,135083.7732921798,17.216189770130548,15.16684225391219,19.265537286348906,"2. Cost vs CO2 (lambda sweep, MPC)"
+15,MPC,co2_t,5,5,True,0.95,feasible,available,defined,42.853961080579246,35.80511283611901,49.902809325039485,9.798283360490016,7.801427886279036,11.795138834700996,"2. Cost vs CO2 (lambda sweep, MPC)"
+17,MPC,objective,5,5,True,0.95,feasible,available,defined,554647.6313193794,473510.3143590461,635784.9482797127,10.968671521496947,9.023146185979376,12.914196857014518,"2. Cost vs CO2 (lambda sweep, MPC)"
+17,MPC,cost_cny,5,5,True,0.95,feasible,available,defined,87315.7774835607,70738.23142469474,103893.32354242666,12.83924048807624,10.871321728859035,14.807159247293443,"2. Cost vs CO2 (lambda sweep, MPC)"
+17,MPC,co2_t,5,5,True,0.95,feasible,available,defined,46.73318538358188,39.78995593179202,53.676414835371745,10.682329614480398,8.64052128223828,12.724137946722516,"2. Cost vs CO2 (lambda sweep, MPC)"
+19,MPC,objective,5,5,True,0.95,feasible,available,defined,1028863.1272504447,882246.0845418321,1175480.1699590574,10.908119806499036,8.950861892070245,12.865377720927826,"2. Cost vs CO2 (lambda sweep, MPC)"
+19,MPC,cost_cny,5,5,True,0.95,feasible,available,defined,66952.4883653393,42378.39369740855,91526.58303327006,9.837537946211032,6.376728398066479,13.298347494355585,"2. Cost vs CO2 (lambda sweep, MPC)"
+19,MPC,co2_t,5,5,True,0.95,feasible,available,defined,48.09553194425528,41.62093468683989,54.57012920167067,10.988699302063386,9.04841341707507,12.928985187051703,"2. Cost vs CO2 (lambda sweep, MPC)"
+21,open-loop,objective,5,5,True,0.95,feasible,available,defined,153229.07405764953,129358.68807130177,177099.4600439973,21.480808540151536,18.490389994912167,24.471227085390904,3. Forecast error
+21,open-loop,cost_cny,5,5,True,0.95,feasible,available,defined,150200.5362060518,126450.16600370646,173950.90640839713,22.398663796305495,19.279464005274967,25.517863587336024,3. Forecast error
+21,open-loop,co2_t,5,5,True,0.95,feasible,available,defined,30.285378515977083,26.963414905605607,33.607342126348556,7.084826843496681,6.188801049562714,7.980852637430648,3. Forecast error
+21,MPC,objective,5,5,True,0.95,feasible,available,defined,153229.07405764956,129358.68807130179,177099.46004399733,21.480808540151536,18.490389994912167,24.471227085390904,3. Forecast error
+21,MPC,cost_cny,5,5,True,0.95,feasible,available,defined,150200.53620605182,126450.16600370647,173950.90640839716,22.3986637963055,19.279464005274967,25.51786358733603,3. Forecast error
+21,MPC,co2_t,5,5,True,0.95,feasible,available,defined,30.285378515977094,26.963414905605624,33.60734212634856,7.084826843496684,6.188801049562715,7.980852637430653,3. Forecast error
+21,oracle,objective,5,5,True,0.95,feasible,available,defined,153229.07405764953,129358.68807130177,177099.4600439973,21.480808540151536,18.490389994912167,24.471227085390904,3. Forecast error
+21,oracle,cost_cny,5,5,True,0.95,feasible,available,defined,150200.5362060518,126450.16600370646,173950.90640839713,22.398663796305495,19.279464005274967,25.517863587336024,3. Forecast error
+21,oracle,co2_t,5,5,True,0.95,feasible,available,defined,30.285378515977083,26.963414905605607,33.607342126348556,7.084826843496681,6.188801049562714,7.980852637430648,3. Forecast error
+25,open-loop,objective,5,0,False,0.95,infeasible_runs,ineligible,defined,,,,,,,3. Forecast error
+25,open-loop,cost_cny,5,0,False,0.95,infeasible_runs,ineligible,defined,,,,,,,3. Forecast error
+25,open-loop,co2_t,5,0,False,0.95,infeasible_runs,ineligible,defined,,,,,,,3. Forecast error
+25,MPC,objective,5,5,True,0.95,feasible,available,defined,150821.40084816783,128243.38886312867,173399.412833207,20.952197641184373,18.17509300604487,23.729302276323875,3. Forecast error
+25,MPC,cost_cny,5,5,True,0.95,feasible,available,defined,147684.64721649818,125230.52773684113,170138.76669615522,21.835998853089865,18.951845723333193,24.720151982846538,3. Forecast error
+25,MPC,co2_t,5,5,True,0.95,feasible,available,defined,31.36753631669661,26.318573487746725,36.4164991456465,7.2194186403345215,5.889926139584095,8.548911141084947,3. Forecast error
+25,oracle,objective,5,5,True,0.95,feasible,available,defined,152915.55595524987,130963.16851214666,174867.9433983531,21.24371227274628,18.577506943678152,23.909917601814406,3. Forecast error
+25,oracle,cost_cny,5,5,True,0.95,feasible,available,defined,149819.1957653439,127926.87439931156,171711.51713137625,22.152264653546027,19.37945528283579,24.925074024256265,3. Forecast error
+25,oracle,co2_t,5,5,True,0.95,feasible,available,defined,30.96360189905962,25.773684275353602,36.153519522765635,7.129076650334016,5.765127366825671,8.493025933842361,3. Forecast error
+29,open-loop,objective,5,0,False,0.95,infeasible_runs,ineligible,defined,,,,,,,3. Forecast error
+29,open-loop,cost_cny,5,0,False,0.95,infeasible_runs,ineligible,defined,,,,,,,3. Forecast error
+29,open-loop,co2_t,5,0,False,0.95,infeasible_runs,ineligible,defined,,,,,,,3. Forecast error
+29,MPC,objective,5,5,True,0.95,feasible,available,defined,144821.27338126328,123852.40874085281,165790.13802167375,19.962545481737337,17.62102941759206,22.304061545882615,3. Forecast error
+29,MPC,cost_cny,5,5,True,0.95,feasible,available,defined,141683.36792863454,120922.42508248593,162444.31077478314,20.798842896075705,18.39157162947705,23.20611416267436,3. Forecast error
+29,MPC,co2_t,5,5,True,0.95,feasible,available,defined,31.37905452628728,25.389780041365533,37.36832901120903,7.117798155218978,5.504266762896306,8.73132954754165,3. Forecast error
+29,oracle,objective,5,5,True,0.95,feasible,available,defined,148221.6432060891,128712.54589550577,167730.74051667243,20.437746366847296,18.266231084144586,22.609261649550007,3. Forecast error
+29,oracle,cost_cny,5,5,True,0.95,feasible,available,defined,145019.11714795983,125438.95740627678,164599.27688964288,21.295122866161996,19.03148834546699,23.558757386857003,3. Forecast error
+29,oracle,co2_t,5,5,True,0.95,feasible,available,defined,32.02526058129249,26.316613517866397,37.733907644718585,7.258986666514768,5.772993027505097,8.74498030552444,3. Forecast error
+33,open-loop,objective,5,0,False,0.95,infeasible_runs,ineligible,defined,,,,,,,3. Forecast error
+33,open-loop,cost_cny,5,0,False,0.95,infeasible_runs,ineligible,defined,,,,,,,3. Forecast error
+33,open-loop,co2_t,5,0,False,0.95,infeasible_runs,ineligible,defined,,,,,,,3. Forecast error
+33,MPC,objective,5,5,True,0.95,feasible,available,defined,140160.48053951317,120664.88298986116,159656.07808916518,19.213626805234043,17.13687804756482,21.290375562903264,3. Forecast error
+33,MPC,cost_cny,5,5,True,0.95,feasible,available,defined,136810.29628359334,117568.84113914288,156051.75142804382,19.98199513943394,17.88429979818644,22.079690480681442,3. Forecast error
+33,MPC,co2_t,5,5,True,0.95,feasible,available,defined,33.50184255919813,25.708455876464527,41.295229241931736,7.544477207526187,5.287142812933261,9.801811602119113,3. Forecast error
+33,oracle,objective,5,5,True,0.95,feasible,available,defined,145498.98812040273,128602.52489736951,162395.45134343597,19.956585523561394,18.175894410727494,21.737276636395293,3. Forecast error
+33,oracle,cost_cny,5,5,True,0.95,feasible,available,defined,141936.0337882722,124768.21966902322,159103.84790752118,20.741982896368228,18.886855763887752,22.597110028848704,3. Forecast error
+33,oracle,co2_t,5,5,True,0.95,feasible,available,defined,35.62954332130535,28.111853464314517,43.147233178296176,8.006961896586446,5.933684223070635,10.080239570102258,3. Forecast error
+37,open-loop,objective,5,0,False,0.95,infeasible_runs,ineligible,defined,,,,,,,3. Forecast error
+37,open-loop,cost_cny,5,0,False,0.95,infeasible_runs,ineligible,defined,,,,,,,3. Forecast error
+37,open-loop,co2_t,5,0,False,0.95,infeasible_runs,ineligible,defined,,,,,,,3. Forecast error
+37,MPC,objective,5,5,True,0.95,feasible,available,defined,135082.9785666435,116074.18193833958,154091.7751949474,18.486362944077094,16.113474114184918,20.85925177396927,3. Forecast error
+37,MPC,cost_cny,5,5,True,0.95,feasible,available,defined,131527.76225180225,112592.05238416934,150463.47211943517,19.178761636121543,16.77528460070751,21.582238671535574,3. Forecast error
+37,MPC,co2_t,5,5,True,0.95,feasible,available,defined,35.55216314841241,26.206764769829356,44.89756152699547,8.021260367930873,5.074073716887902,10.968447018973844,3. Forecast error
+37,oracle,objective,5,5,True,0.95,feasible,available,defined,144089.25920637514,131117.9722311984,157060.54618155188,19.738478850989218,17.898839401153552,21.578118300824883,3. Forecast error
+37,oracle,cost_cny,5,5,True,0.95,feasible,available,defined,140045.66009483463,126331.96168115194,153759.35850851733,20.441182545123503,18.544829623533644,22.337535466713362,3. Forecast error
+37,oracle,co2_t,5,5,True,0.95,feasible,available,defined,40.435991115404974,29.493227056832424,51.378755173977524,9.093395704490915,6.054006668880765,12.132784740101064,3. Forecast error
+41,open-loop,objective,5,0,False,0.95,infeasible_runs,ineligible,defined,,,,,,,3. Forecast error
+41,open-loop,cost_cny,5,0,False,0.95,infeasible_runs,ineligible,defined,,,,,,,3. Forecast error
+41,open-loop,co2_t,5,0,False,0.95,infeasible_runs,ineligible,defined,,,,,,,3. Forecast error
+41,MPC,objective,5,4,False,0.95,infeasible_runs,ineligible,defined,,,,,,,3. Forecast error
+41,MPC,cost_cny,5,4,False,0.95,infeasible_runs,ineligible,defined,,,,,,,3. Forecast error
+41,MPC,co2_t,5,4,False,0.95,infeasible_runs,ineligible,defined,,,,,,,3. Forecast error
+41,oracle,objective,5,5,True,0.95,feasible,available,defined,142620.33665426102,133060.32602248446,152180.34728603758,19.529416082429385,17.121165693050777,21.937666471807994,3. Forecast error
+41,oracle,cost_cny,5,5,True,0.95,feasible,available,defined,138170.91756399267,127309.44034662313,149032.3947813622,20.156673654686948,17.695102067598814,22.61824524177508,3. Forecast error
+41,oracle,co2_t,5,5,True,0.95,feasible,available,defined,44.49419090268323,30.523710664602113,58.464671140764345,10.025218810681926,6.162818372359444,13.887619249004407,3. Forecast error
+45,MPC,objective,5,5,True,0.95,feasible,available,defined,108494.29286990815,91234.97233550405,125753.61340431226,15.017955763593969,12.763124263915737,17.2727872632722,4. Battery size (2-hour battery); 0 MWh = job shifting only
+45,MPC,cost_cny,5,5,True,0.95,feasible,available,defined,105408.46996355077,88391.37559407606,122425.56433302548,15.53268731652419,13.215267755614244,17.850106877434136,4. Battery size (2-hour battery); 0 MWh = job shifting only
+45,MPC,co2_t,5,5,True,0.95,feasible,available,defined,30.858229063573685,25.006962135792772,36.7094959913546,7.054369312958113,5.493371410396305,8.615367215519921,4. Battery size (2-hour battery); 0 MWh = job shifting only
+47,MPC,objective,5,5,True,0.95,feasible,available,defined,130784.9795755735,111635.06291805174,149934.89623309523,18.09827141489196,15.723205265301862,20.47333756448206,4. Battery size (2-hour battery); 0 MWh = job shifting only
+47,MPC,cost_cny,5,5,True,0.95,feasible,available,defined,127630.47359318442,108633.87401602237,146627.07317034647,18.802525614003294,16.35069131223688,21.254359915769708,4. Battery size (2-hour battery); 0 MWh = job shifting only
+47,MPC,co2_t,5,5,True,0.95,feasible,available,defined,31.54505982389089,25.78724118949663,37.30287845828515,7.207670328038742,5.692314370761755,8.72302628531573,4. Battery size (2-hour battery); 0 MWh = job shifting only
+49,MPC,objective,5,5,True,0.95,feasible,available,defined,148359.18882196216,127147.36241898677,169571.01522493755,20.523820301360633,18.020061675186245,23.02757892753502,4. Battery size (2-hour battery); 0 MWh = job shifting only
+49,MPC,cost_cny,5,5,True,0.95,feasible,available,defined,145196.31103807344,124090.9017276009,166301.720348546,21.384225147775965,18.78953384038225,23.978916455169678,4. Battery size (2-hour battery); 0 MWh = job shifting only
+49,MPC,co2_t,5,5,True,0.95,feasible,available,defined,31.628777838887288,26.214071085740827,37.04348459203375,7.223523283860746,5.792299549960235,8.654747017761256,4. Battery size (2-hour battery); 0 MWh = job shifting only
+51,MPC,objective,5,5,True,0.95,feasible,available,defined,170481.18819967596,142539.4773975382,198422.89900181373,23.580308718499253,20.16230553727858,26.998311899719926,4. Battery size (2-hour battery); 0 MWh = job shifting only
+51,MPC,cost_cny,5,5,True,0.95,feasible,available,defined,167743.5153319174,140025.87669188614,195461.1539719487,24.700939908615414,21.153487301645015,28.248392515585813,4. Battery size (2-hour battery); 0 MWh = job shifting only
+51,MPC,co2_t,5,5,True,0.95,feasible,available,defined,27.376728677585653,23.46144965092629,31.292007704245016,6.247901664565963,5.15971100540646,7.336092323725466,4. Battery size (2-hour battery); 0 MWh = job shifting only
+53,MPC,objective,5,5,True,0.95,feasible,available,defined,178764.04897883476,148212.42726158682,209315.6706960827,24.723227673599794,20.9842010017412,28.462254345458387,4. Battery size (2-hour battery); 0 MWh = job shifting only
+53,MPC,cost_cny,5,5,True,0.95,feasible,available,defined,176264.9791545376,146042.36744907382,206487.5908600014,25.95515444257424,22.052314986863866,29.857993898284615,4. Battery size (2-hour battery); 0 MWh = job shifting only
+53,MPC,co2_t,5,5,True,0.95,feasible,available,defined,24.990698242971643,16.202285414944722,33.77911107099857,5.6387949916497835,3.9025538729769655,7.375036110322601,4. Battery size (2-hour battery); 0 MWh = job shifting only
+55,MPC,objective,5,5,True,0.95,feasible,available,defined,148359.18882196216,127147.36241898677,169571.01522493755,20.523820301360633,18.020061675186245,23.02757892753502,5. Is the gain just price arbitrage? (flat tariff test)
+55,MPC,cost_cny,5,5,True,0.95,feasible,available,defined,145196.31103807344,124090.9017276009,166301.720348546,21.384225147775965,18.78953384038225,23.978916455169678,5. Is the gain just price arbitrage? (flat tariff test)
+55,MPC,co2_t,5,5,True,0.95,feasible,available,defined,31.628777838887288,26.214071085740827,37.04348459203375,7.223523283860746,5.792299549960235,8.654747017761256,5. Is the gain just price arbitrage? (flat tariff test)
+57,MPC,objective,5,5,True,0.95,feasible,available,defined,13444.425722877797,5083.2257499496645,21805.62569580593,1.9233447118558789,0.7292895767851615,3.117399846926596,5. Is the gain just price arbitrage? (flat tariff test)
+57,MPC,cost_cny,5,5,True,0.95,feasible,available,defined,9260.725428093132,1469.9866343521253,17051.46422183414,1.4155125360281025,0.23962484424780373,2.591400227808401,5. Is the gain just price arbitrage? (flat tariff test)
+57,MPC,co2_t,5,5,True,0.95,feasible,available,defined,41.837002947846926,35.91624769277355,47.7577582029203,9.563351476916912,7.797948306905871,11.328754646927953,5. Is the gain just price arbitrage? (flat tariff test)
+59,MPC,objective,5,5,True,0.95,feasible,available,defined,148359.18882196216,127147.36241898677,169571.01522493755,20.523820301360633,18.020061675186245,23.02757892753502,6. If our assumptions are wrong
+59,MPC,cost_cny,5,5,True,0.95,feasible,available,defined,145196.31103807344,124090.9017276009,166301.720348546,21.384225147775965,18.78953384038225,23.978916455169678,6. If our assumptions are wrong
+59,MPC,co2_t,5,5,True,0.95,feasible,available,defined,31.628777838887288,26.214071085740827,37.04348459203375,7.223523283860746,5.792299549960235,8.654747017761256,6. If our assumptions are wrong
+61,MPC,objective,5,5,True,0.95,feasible,available,defined,125329.44104256069,115717.63644745898,134941.24563766242,16.92417374104148,15.925298593551654,17.9230488885313,6. If our assumptions are wrong
+61,MPC,cost_cny,5,5,True,0.95,feasible,available,defined,123694.76345161763,114419.38094960236,132970.1459536329,17.766265542540143,16.79882973519556,18.733701349884726,6. If our assumptions are wrong
+61,MPC,co2_t,5,5,True,0.95,feasible,available,defined,16.346775909430526,8.869558365427238,23.823993453433815,3.709776218369664,1.8944812096329493,5.525071227106379,6. If our assumptions are wrong
+63,MPC,objective,5,4,False,0.95,infeasible_runs,ineligible,defined,,,,,,,6. If our assumptions are wrong
+63,MPC,cost_cny,5,4,False,0.95,infeasible_runs,ineligible,defined,,,,,,,6. If our assumptions are wrong
+63,MPC,co2_t,5,4,False,0.95,infeasible_runs,ineligible,defined,,,,,,,6. If our assumptions are wrong
+65,MPC,objective,5,2,False,0.95,infeasible_runs,ineligible,defined,,,,,,,6. If our assumptions are wrong
+65,MPC,cost_cny,5,2,False,0.95,infeasible_runs,ineligible,defined,,,,,,,6. If our assumptions are wrong
+65,MPC,co2_t,5,2,False,0.95,infeasible_runs,ineligible,defined,,,,,,,6. If our assumptions are wrong
+67,MPC,objective,5,5,True,0.95,feasible,available,defined,160222.4043660369,136798.8237697216,183645.9849623522,22.102365819940378,19.378307115349312,24.826424524531443,6. If our assumptions are wrong
+67,MPC,cost_cny,5,5,True,0.95,feasible,available,defined,156102.40360056836,131619.29106764586,180585.51613349086,22.949760713415042,19.975875284597826,25.923646142232258,6. If our assumptions are wrong
+67,MPC,co2_t,5,5,True,0.95,feasible,available,defined,41.20000765468558,20.708028030539165,61.69198727883199,9.172157542451297,4.665745150108636,13.678569934793957,6. If our assumptions are wrong
+69,MPC,objective,5,5,True,0.95,feasible,available,defined,146715.7242981744,124964.9254499542,168466.5231463946,20.334426373197722,17.731504119664734,22.93734862673071,6. If our assumptions are wrong
+69,MPC,cost_cny,5,5,True,0.95,feasible,available,defined,145905.12900674436,124183.61150001177,167626.64651347694,21.486872791019543,18.811827764517723,24.161917817521363,6. If our assumptions are wrong
+69,MPC,co2_t,5,5,True,0.95,feasible,available,defined,8.105952914300701,-3.0710740078240377,19.28297983642544,1.9602142268046994,-0.5925555627978232,4.512984016407222,6. If our assumptions are wrong
+71,MPC,objective,5,5,True,0.95,feasible,available,defined,75289.09698818109,63831.32430804656,86746.86966831562,10.470320537665252,8.886254024545858,12.054387050784646,6. If our assumptions are wrong
+71,MPC,cost_cny,5,5,True,0.95,feasible,available,defined,72125.28940892899,60947.075770296375,83303.50304756161,10.68116621154492,9.061167806245445,12.301164616844394,6. If our assumptions are wrong
+71,MPC,co2_t,5,5,True,0.95,feasible,available,defined,31.638075792521363,26.23108191187046,37.045069673172264,7.225781234090872,5.794886696626696,8.656675771555047,6. If our assumptions are wrong
+73,open-loop,objective,5,5,True,0.95,feasible,available,defined,140697.04549014108,113802.52954985664,167591.56143042553,21.082407830275333,17.63924279898877,24.525572861561894,7. Systematically biased green forecast (+ = too optimistic)
+73,open-loop,cost_cny,5,5,True,0.95,feasible,available,defined,138339.53371819548,111965.77602725796,164713.291409133,21.94606604555913,18.39553559786836,25.496596493249903,7. Systematically biased green forecast (+ = too optimistic)
+73,open-loop,co2_t,5,5,True,0.95,feasible,available,defined,23.57511771945633,13.037457345129377,34.112778093783284,6.324086767869252,3.657561409632257,8.990612126106248,7. Systematically biased green forecast (+ = too optimistic)
+73,MPC,objective,5,5,True,0.95,feasible,available,defined,152673.94615648375,125033.62048523748,180314.27182773003,22.896640433630797,19.19083894878009,26.602441918481503,7. Systematically biased green forecast (+ = too optimistic)
+73,MPC,cost_cny,5,5,True,0.95,feasible,available,defined,148776.6078836123,121475.68789251678,176077.52787470783,23.61914599999509,19.785095982648865,27.453196017341316,7. Systematically biased green forecast (+ = too optimistic)
+73,MPC,co2_t,5,5,True,0.95,feasible,available,defined,38.97338272871466,31.076549354192363,46.87021610323696,10.551903053515442,8.437675735806204,12.66613037122468,7. Systematically biased green forecast (+ = too optimistic)
+76,open-loop,objective,5,5,True,0.95,feasible,available,defined,153229.07405764953,129358.68807130177,177099.4600439973,21.480808540151536,18.490389994912167,24.471227085390904,7. Systematically biased green forecast (+ = too optimistic)
+76,open-loop,cost_cny,5,5,True,0.95,feasible,available,defined,150200.5362060518,126450.16600370646,173950.90640839713,22.398663796305495,19.279464005274967,25.517863587336024,7. Systematically biased green forecast (+ = too optimistic)
+76,open-loop,co2_t,5,5,True,0.95,feasible,available,defined,30.285378515977083,26.963414905605607,33.607342126348556,7.084826843496681,6.188801049562714,7.980852637430648,7. Systematically biased green forecast (+ = too optimistic)
+76,MPC,objective,5,5,True,0.95,feasible,available,defined,153229.07405764956,129358.68807130179,177099.46004399733,21.480808540151536,18.490389994912167,24.471227085390904,7. Systematically biased green forecast (+ = too optimistic)
+76,MPC,cost_cny,5,5,True,0.95,feasible,available,defined,150200.53620605182,126450.16600370647,173950.90640839716,22.3986637963055,19.279464005274967,25.51786358733603,7. Systematically biased green forecast (+ = too optimistic)
+76,MPC,co2_t,5,5,True,0.95,feasible,available,defined,30.285378515977094,26.963414905605624,33.60734212634856,7.084826843496684,6.188801049562715,7.980852637430653,7. Systematically biased green forecast (+ = too optimistic)
+79,open-loop,objective,5,0,False,0.95,infeasible_runs,ineligible,defined,,,,,,,7. Systematically biased green forecast (+ = too optimistic)
+79,open-loop,cost_cny,5,0,False,0.95,infeasible_runs,ineligible,defined,,,,,,,7. Systematically biased green forecast (+ = too optimistic)
+79,open-loop,co2_t,5,0,False,0.95,infeasible_runs,ineligible,defined,,,,,,,7. Systematically biased green forecast (+ = too optimistic)
+79,MPC,objective,5,5,True,0.95,feasible,available,defined,150569.71963923407,128318.99774061755,172820.4415378506,19.719435146549593,17.142409285158337,22.29646100794085,7. Systematically biased green forecast (+ = too optimistic)
+79,MPC,cost_cny,5,5,True,0.95,feasible,available,defined,148116.07055185793,125869.73394537129,170362.40715834458,20.730342072096654,18.005881874791005,23.454802269402304,7. Systematically biased green forecast (+ = too optimistic)
+79,MPC,co2_t,5,5,True,0.95,feasible,available,defined,24.53649087376102,21.646080923280653,27.42690082424139,4.987595859736682,4.611111120404627,5.364080599068736,7. Systematically biased green forecast (+ = too optimistic)
+82,MPC,objective,5,0,False,0.95,infeasible_runs,ineligible,defined,,,,,,,9. Grid import limit: paired cost of the cap vs uncapped MPC
+82,MPC,cost_cny,5,0,False,0.95,infeasible_runs,ineligible,defined,,,,,,,9. Grid import limit: paired cost of the cap vs uncapped MPC
+82,MPC,co2_t,5,0,False,0.95,infeasible_runs,ineligible,defined,,,,,,,9. Grid import limit: paired cost of the cap vs uncapped MPC
+84,MPC,objective,5,0,False,0.95,infeasible_runs,ineligible,defined,,,,,,,9. Grid import limit: paired cost of the cap vs uncapped MPC
+84,MPC,cost_cny,5,0,False,0.95,infeasible_runs,ineligible,defined,,,,,,,9. Grid import limit: paired cost of the cap vs uncapped MPC
+84,MPC,co2_t,5,0,False,0.95,infeasible_runs,ineligible,defined,,,,,,,9. Grid import limit: paired cost of the cap vs uncapped MPC
+86,MPC,objective,5,0,False,0.95,infeasible_runs,ineligible,defined,,,,,,,9. Grid import limit: paired cost of the cap vs uncapped MPC
+86,MPC,cost_cny,5,0,False,0.95,infeasible_runs,ineligible,defined,,,,,,,9. Grid import limit: paired cost of the cap vs uncapped MPC
+86,MPC,co2_t,5,0,False,0.95,infeasible_runs,ineligible,defined,,,,,,,9. Grid import limit: paired cost of the cap vs uncapped MPC
+88,MPC,objective,5,5,True,0.95,feasible,available,defined,147746.21768963936,126291.32610170581,169201.10927757292,20.439652836820926,17.87945225961537,22.999853414026482,9. Grid import limit: paired cost of the cap vs uncapped MPC
+88,MPC,cost_cny,5,5,True,0.95,feasible,available,defined,144599.35654765397,123254.79707287459,165943.91602243335,21.29688935051443,18.642328566403723,23.951450134625137,9. Grid import limit: paired cost of the cap vs uncapped MPC
+88,MPC,co2_t,5,5,True,0.95,feasible,available,defined,31.468611419854494,26.343101067440358,36.59412177226863,7.185344258757676,5.815145623476042,8.555542894039311,9. Grid import limit: paired cost of the cap vs uncapped MPC
+90,MPC,objective,5,5,True,0.95,feasible,available,defined,148359.18882196216,127147.36241898677,169571.01522493755,20.523820301360633,18.020061675186245,23.02757892753502,9. Grid import limit: paired cost of the cap vs uncapped MPC
+90,MPC,cost_cny,5,5,True,0.95,feasible,available,defined,145196.31103807344,124090.9017276009,166301.720348546,21.384225147775965,18.78953384038225,23.978916455169678,9. Grid import limit: paired cost of the cap vs uncapped MPC
+90,MPC,co2_t,5,5,True,0.95,feasible,available,defined,31.628777838887288,26.214071085740827,37.04348459203375,7.223523283860746,5.792299549960235,8.654747017761256,9. Grid import limit: paired cost of the cap vs uncapped MPC
+92,MPC,objective,5,5,True,0.95,feasible,available,defined,148532.87099146735,127215.25378592822,169850.4881970065,20.548122111939158,18.02275239757012,23.073491826308196,9. Grid import limit: paired cost of the cap vs uncapped MPC
+92,MPC,cost_cny,5,5,True,0.95,feasible,available,defined,145347.06053251648,124130.29887790719,166563.82218712577,21.406725879946045,18.787330738526457,24.026121021365633,9. Grid import limit: paired cost of the cap vs uncapped MPC
+92,MPC,co2_t,5,5,True,0.95,feasible,available,defined,31.85810458950882,26.524297776498226,37.19191140251941,7.273550148442122,5.874827242637281,8.672273054246963,9. Grid import limit: paired cost of the cap vs uncapped MPC
+94,MPC,objective,5,5,True,0.95,feasible,available,defined,148761.13466565727,127309.14687401321,170213.12245730133,20.57968490360252,18.033869697633932,23.125500109571107,9. Grid import limit: paired cost of the cap vs uncapped MPC
+94,MPC,cost_cny,5,5,True,0.95,feasible,available,defined,145565.91801447424,124221.0143988461,166910.82163010238,21.438970869392726,18.797876609373073,24.08006512941238,9. Grid import limit: paired cost of the cap vs uncapped MPC
+94,MPC,co2_t,5,5,True,0.95,feasible,available,defined,31.9521665118305,26.914914969877117,36.989418053783886,7.293897136744937,5.960414856921212,8.62737941656866,9. Grid import limit: paired cost of the cap vs uncapped MPC

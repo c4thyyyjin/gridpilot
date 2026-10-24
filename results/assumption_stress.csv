@@ -1,0 +1,8 @@
+assumption changed,MPC objective gain %,SLA violations
+base case,20.53724967261803,0.0
+less flexible work: inference 60 / training 25 / batch 15 %,16.910225637478092,0.0
+more flexible work: inference 20 / training 55 / batch 25 %,,0.0
+tighter deadlines (jobs need 70-90 % of their window),,0.0
+looser deadlines (jobs need 20-35 % of their window),22.11832340133153,0.0
+grid carbon constant (no hourly swing),20.348544358461307,0.0
+price spread halved (peak/critical/valley pulled toward flat),10.463353938728782,0.0
