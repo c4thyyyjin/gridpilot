@@ -73,7 +73,7 @@ python -m pytest -q
 ```
 
 The current full suite passed **206 tests**. Validation, storage-accounting
-and regeneration evidence are recorded in review/STEP1_VERIFICATION.md. Tests cover independent
+and regeneration evidence are recorded in review/VERIFICATION.md. Tests cover independent
 solvers, evaluator equality, causality, service/ramp/battery limits, explicit
 fallbacks, paired statistics, economics and output regeneration.
 
@@ -117,9 +117,9 @@ Unexpected errors propagate rather than being presented as successful old output
 | improved_results/ | Current laxity-guard regression study, seeds 200–219 |
 | fresh_results/ | Current fresh validation study, seeds 220–239 |
 
-Earlier archived studies are excluded from this submission folder. Historical
-review documents may refer to those development snapshots. Current evidence is
-in results/, improved_results/ and fresh_results/.
+These folders contain the final evidence for distinct experiment designs.
+Original headline/economics comparisons and guarded-controller studies are
+retained separately because they answer different questions.
 
 Fresh guarded MPC feasibility, out of 20 seeds per cell:
 
@@ -156,11 +156,11 @@ universal deadline guarantee. Unsupported cheap tariffs are rejected consistentl
 
 Grid-cap and battery economic screens include illustrative capital/O&M/demand
 charges and repeated-block annualization; they are not actual bills or investment
-recommendations. See ASSUMPTIONS.md, docs/FIX8_REVIEW.md and
-docs/FIX567_IMPROVED_REVIEW.md for assumptions, tradeoffs and failure cases.
+recommendations. See ASSUMPTIONS.md, docs/ECONOMICS.md and
+docs/CONTROLLER.md for assumptions, tradeoffs and failure cases.
 
 Solo student project; no human teammates. Individual contribution/progress:
 docs/TEAM.md. AI tools assisted with implementation and checking.
-AI contributions/checks: docs/AI_USE.md. Submission audit:
-review/REQUIREMENTS_AUDIT.md. Verify the actual public repository contents and
-submission separately; successful local execution does not establish either.
+AI contributions/checks: docs/AI_USE.md. Current limitations and resolution status: docs/LIMITATIONS_REVIEW.md.
+Repository: https://github.com/c4thyyyjin/gridpilot. Fresh-checkout verification
+commands are in review/VERIFICATION.md; school submission is a separate step.

@@ -72,7 +72,7 @@ Useful work is IT energy times work efficiency. Ramp violations in emergency
 fallback are penalized and classified degraded. Per-resume overhead and GPU
 granularity remain outside this model. Held-out stress profiles are synthetic,
 not measured seasons; no real operating traces were supplied. See
-`docs/FIX5_7_REVIEW.md`.
+`docs/CONTROLLER.md`.
 
 
 ## Optional guarded online controller
@@ -83,7 +83,7 @@ This is explicit in decision traces and shared with the matched no-battery refer
 uses laxity-based service targets and reserves ramp-down power; battery dispatch is replanned
 with current job powers fixed. It is an hourly simulation assumption, not measured
 hardware latency. Unknown future jobs remain unavailable. See
-`docs/FIX567_GUARD_REVIEW.md` for tradeoffs and remaining limits.
+`docs/CONTROLLER.md` for tradeoffs and remaining limits.
 
 
 ## Renewable load-service attribution

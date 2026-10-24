@@ -1,10 +1,10 @@
-# Post-checklist verification — step 1 complete
+# Final technical verification
 
-Verified in `step6 fix567 improved`, 2026-10-24 (California client date).
+Recorded verification: October 24, 2026 (America/Los_Angeles).
+Scope: the code and evidence packaged in this submission.
 
 ## Completed work
 
-- Supplied fixes were inspected and the original 181-test suite ran successfully.
 - Corrected a remaining renewable-storage ledger error: stored renewable energy
   now loses the full withdrawn energy, including discharge conversion losses.
   The model explicitly specifies well-mixed storage, conservative nonrenewable
@@ -17,8 +17,7 @@ Verified in `step6 fix567 improved`, 2026-10-24 (California client date).
   tests. The scenario generator remains intentionally hourly-only.
 - Oracle manifests now record the complete configuration snapshot. Oracle
   diagnostics restore recorded settings and policies, then restore caller state
-  even on failure. Older archived manifests without snapshots still require
-  their original configuration.
+  even on failure.
 - Confirmed supplied ineligible-bar labels and total-benefit battery-chart labels;
   repaired a clipped stress-chart title and visually checked the corrected plot.
 - Qualified untested finer-resolution/PUE/idle-power effects. Tariff values are
@@ -50,21 +49,21 @@ failures and three fresh failures. The separate original headline MPC objective
 is unchanged at 574031.5459986166 CNY including the carbon term. Renewable-share
 values use the new documented definition and are refreshed in current outputs.
 
-Archived robustness_results/ and guarded_results/ preserve the older studies and
-metric definition. They were not silently rewritten with a different controller.
-Use results/, improved_results/ and fresh_results/ for current evidence.
+The submission contains results/ and figures/ for the original headline/economics
+comparison, and improved_results/ and fresh_results/ for the current guarded
+controller. These are distinct experiments, not obsolete release copies.
 
 README, AI disclosure, assumptions and this verification report reflect the
 changes. Tests and numerical work here were performed by Codex; they do not
 assert additional student activities or a completed school submission.
 
-## Step 3 — after publishing the final GitHub repository
+## Verify the published repository
 
-Clone the actual remote, not another copy of your working folder. Replace the
-URL below. These macOS commands assume Python 3.13, as tested by the project:
+Clone the published repository into an empty location outside the source folder.
+These macOS commands assume Python 3.13, as tested by the project:
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/YOUR-REPO.git fresh-check
+git clone https://github.com/c4thyyyjin/gridpilot.git fresh-check
 cd fresh-check
 python3 --version
 python3 -m venv .venv
@@ -85,5 +84,14 @@ it reports feasible service for the supplied demo case.
 Ensure this clone contains the source, tests, requirements, README, AI/solo
 contribution records and the intended result evidence. Save the terminal summary
 as submission evidence. A failure means repair the published version, push the
-fix, and repeat in a fresh checkout. Public GitHub availability, fresh remote
-installation and SHSID Learn submitted status remain unverified until performed.
+fix, and repeat in a fresh checkout. This recorded local verification does not establish a successful fresh remote
+installation or the status of a private school submission.
+
+## Submission packaging
+
+The upload-copy verification recorded 206 tests passing in 218.86 seconds using
+the existing locked environment, with output regeneration covered by tests.
+The final documentation cleanup changes wording, organization and the generated
+report documentation path; it does not change scheduling or numerical evidence.
+Historical fix reports and interim checklists are excluded from this release.
+A fresh public-checkout installation remains a separate verification step.

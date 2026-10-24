@@ -1,9 +1,8 @@
-# Limitation 8: grid capacity, storage capital cost and demand billing
+# Grid capacity and battery economics
 
-Item 8 of LIMITATIONS_REVIEW.md identified missing capital costs, demand charges
-and a grid-limit sweep. These analyses are now implemented separately from the
-original dispatch objective. They are scenario screens, not a tariff-calibrated
-investment recommendation or a demand-charge-optimal controller.
+These analyses are post-dispatch scenario screens using illustrative inputs,
+not a tariff-calibrated investment recommendation or demand-charge-optimal
+controller.
 
 ## Grid connection sweep
 
@@ -87,21 +86,5 @@ charges have not been added to the hourly controller's objective. Its monthly
 history, ratchets and demand-response billing are not modeled. A 72-hour peak is
 not a measured monthly maximum, and repeated-block annual costs are not an actual
 yearly bill. Real investment/contract decisions need vendor quotes, site tariffs,
-seasonal traces and demand-aware dispatch. Item 8's missing analyses are addressed;
+seasonal traces and demand-aware dispatch. The economic sensitivity analyses are implemented;
 their numerical conclusions remain conditional on the stated assumptions.
-
-## Verification
-
-All 100 tests passed in the locked environment. Twelve economics unit tests
-cover cost units, annualization, zero-interest capital recovery, alternative
-billing, an unpriced uncapped contract, zero-battery attribution, NPV/payback,
-infeasible cases, paired cap deltas and invalid financing/seed inputs. The
-quick CLI test regenerates fifteen CSVs and seven figures, retaining infeasible
-cap cases without savings claims.
-
-The final full run regenerated fifteen CSVs and seven verified PNGs, including
-660 seed-level economic cases. The 26 MW cap added 369.61 CNY
-per 72-hour block versus uncapped MPC (mean across five seeds), and
-401.95 CNY to the priced-carbon objective. The 10 MW cap
-was infeasible and excluded from cost/economic savings rankings. Both new plots
-were inspected visually; affected tests passed again after plot/numerical cleanup.

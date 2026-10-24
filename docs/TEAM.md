@@ -1,29 +1,44 @@
-# My contribution and progress
+# Individual contribution and project development
 
-## About me
+## Project ownership
 
-I'm a solo student working on this project for HackSHSID 2026, Track 2
-(Huawei/Hithium). I don't have human teammates — it's just me and the AI tools
-I describe in AI_USE.md. I'm keeping this file as TEAM.md because other docs
-link to it, but it's really my personal progress log.
+GridPilot is a solo student project for HackSHSID 2026, Track 2
+(Huawei/Hithium). I am responsible for the project direction, development
+priorities, review of outputs and submission preparation. Claude and Codex
+assisted with implementation, testing and documentation; their contributions
+are detailed in [AI_USE.md](AI_USE.md).
 
-## What I did at each stage
+## My contributions
 
-| Stage | What I did | What the AI tools produced |
+| Area | My work and decisions | Project evidence |
 |---|---|---|
-| Early project stages | I ran the initial modules and tests, fixed an import error that broke pytest, and reported the 23 passing tests | Claude and Codex built the scheduler integration, CBC/HiGHS cross-checks, and testing setup |
-| Steps 4–6 | I supplied each updated project folder, asked for specific fixes, and checked that experiments regenerated correctly | Grid-cap analysis, fallback/feasibility reporting, paired statistics, economics and reproducibility features |
-| Robustness work | I asked for the limitations 5–7 fixes and then supplied the improved version back for independent checking | Causal controllers, the safety layer, service/laxity heuristics, and the synthetic regression and fresh-seed studies |
-| October 23 review | I requested a review against Track 2 and HackSHSID requirements, then asked for corrections to the AI disclosure, README and wording | Codex ran the full 166-test suite, replayed 18 fresh-seed schedules, reproduced the oracle diagnostics, and made documentation corrections |
-| October 24 fixes | I identified six remaining issues (evaluator validation, green-share accounting, chart labels, battery chart attribution, timestep handling, oracle settings) and asked for them to be fixed before submission | Claude implemented all six fixes, added 15 new tests, and regenerated affected results |
-| Solo confirmation | I confirmed I'm working alone — no human teammates | Contribution records updated to reflect solo participation |
+| Problem definition | Selected data-center power–compute co-scheduling and Track 2; chose the project scope and what to model. | README.md; ASSUMPTIONS.md |
+| Iterative development | Ran early modules/tests, reported an import failure and test results, supplied updated project versions, and requested corrections and independent checks. | Source modules; tests/; review/VERIFICATION.md |
+| Reliability priorities | Requested fixes to the ten review items, then pursued online/delayed control and improved deadline scheduling after the robustness studies exposed failures. | docs/LIMITATIONS_REVIEW.md; docs/CONTROLLER.md |
+| Validation and results review | Requested experiment regeneration and checks of feasibility, solver agreement, reporting and reproducibility; used the findings to prioritize further fixes. | results/; improved_results/; fresh_results/ |
+| Final correctness review | Requested correction of invalid-input handling, renewable-share accounting, chart wording, timestep support and oracle provenance before submission. | Evaluator/validation tests; review/VERIFICATION.md |
+| Documentation and attribution | Reviewed generated wording, corrected the solo participation record, requested accurate AI disclosure and current limitations, and removed outdated release descriptions. | docs/AI_USE.md; docs/TEAM.md; docs/LIMITATIONS_REVIEW.md |
+| Repository preparation | Created the GridPilot GitHub repository, configured the upload workflow, and requested a final cleanup of submission files. | Public repository and final file organization |
 
-## What I still need to do
+## Development milestones
 
-- Explain the model, constraints, controller, tests and limitations in my own
-  words — I need to be able to do this for a presentation
-- Confirm private registration and submission details
-- Prepare the presentation/demo if I'm shortlisted
-- Record any further checks or decisions I make from here
+- Established the synthetic scenario generator, baseline, common evaluator and
+  independent LP implementations through iterative AI-assisted development.
+- Extended the project with feasibility-aware reporting, paired statistics,
+  battery economics, grid-cap sensitivities and reproducible experiment runners.
+- Requested online/delayed policies, ramp/overhead sensitivities and guarded
+  scheduling; followed up on deadline failures with laxity-aware service.
+- On October 23, requested an independent Track 2/submission review and
+  corrections to the README, technical claims and AI attribution.
+- On October 24, requested final correctness fixes and regeneration, prepared
+  the GitHub repository, and requested consolidation of final documentation.
 
-These aren't done yet. I'm noting them so I don't forget.
+## Attribution of technical work
+
+My role included choosing the direction, directing revisions, reviewing results
+and deciding which issues to address. Claude and Codex generated substantial
+parts of the algorithms, LP formulations, tests, analysis and documentation.
+The final 206-test verification and full study regeneration recorded in
+review/VERIFICATION.md were performed by Codex; they are not presented as
+additional manual student checks. External libraries and model references are
+identified in the dependency files and ASSUMPTIONS.md.

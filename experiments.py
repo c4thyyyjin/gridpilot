@@ -367,7 +367,7 @@ def _run_experiments(quick, output_dir):
     md.append("\n### Storage: annual incremental value, NPV and simple payback\n")
     md.append(battery_econ.round(2).to_markdown(index=False) + "\n")
     md.append("Capital annualization methodology: [ATB equations](https://atb.nlr.gov/electricity/2025/equations_%26_variables). "
-              "See docs/FIX8_REVIEW.md for scope and formulas.\n")
+              "See docs/ECONOMICS.md for scope and formulas.\n")
     fig, ax = plt.subplots(figsize=(7, 4.5))
     chosen_rate = settings["demand_rates"][len(settings["demand_rates"])//2]
     shown = battery_econ[(battery_econ.billing_basis == "measured_peak") &
